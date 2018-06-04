@@ -1,0 +1,164 @@
+.inside-wrapper{
+  padding-top:144px;
+  @include shift();
+  @include span-columns(12);
+}
+
+.discover-more{
+  font-family:$Source-Sans-Pro;
+  color:$blue;
+}
+
+
+.work-container {
+  margin-top:235px;
+  overflow:hidden;
+  
+  .wrapper{
+    background-color: #DDE1E9;
+    position: relative;
+    .insider{
+      padding: 50px 0;
+      @include outer-container();
+      &:after{
+        content: " ";
+        position: absolute;
+        height: 100%;
+        width: 999%;
+        right: -999%;
+        background-color: #DDE1E9;
+        top: 0;
+      }
+      .work-wrapper{
+        @include shift(-0.5);    
+        @include span-columns(7);
+        img{
+          max-width: 100%;
+        }
+      }
+      .icon-wrapper{
+        @include shift(0.5);
+        @include span-columns(1);
+      }
+      .description-wrapper{
+        @include span-columns(4);
+        @include omega();
+      }
+  }
+  }
+}
+
+
+h5{
+  display:inline-block;
+  width:120px;
+  padding-top:100px;
+  font-size:15px;
+}
+
+
+.active{
+  color: #1E252B;
+}
+
+.inactive{
+  color: #6B788E;
+}
+
+
+.services-container{
+  padding-top:5.34%;
+  @include outer-container();
+  .planing, .design, .development{
+    @include span-columns(4);
+  }
+}
+
+.companies-container{
+  padding-top:7.49%;
+  .companies{
+    @include span-columns(2);
+      border: 1px solid #F1F2F3;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+      text-align:center;
+  }
+}
+
+.contact-container{  
+    background-color: #003DA6;
+    height:382px;
+    margin-top:144px;
+    .our-work{ 
+        @include span-columns(3);
+        h5{
+        color: #FE1375;
+        }
+        h4{
+        color: #FFFFFF;
+        }
+        .p-basic{
+        color: #FFFFFF;
+        }
+        .discover-more{
+        color: #FFFFFF;
+        }
+    }
+}
+
+.contact{
+  @include shift(3);
+  @include span-columns(1);
+  img{
+      height:90px;
+      width:90px;
+  }
+}
+
+.hello{
+    @include span-columns(4);
+    h5{
+        color: #FE1375;
+    }
+    h4{
+        color: #FFFFFF;
+    }
+    .input{
+        display:inline;
+    }
+    #inptName, #inptEmail{
+        background-color:$blue;
+        border-style:none;
+        border: 1px solid #2359B6;
+        border-radius: 3px;
+        height:50px;
+        width:218px;
+        color:white;
+    }
+
+    #inptHelp{
+        margin-right:10px;
+        background-color:$blue;
+        border-style:none;
+        border: 1px solid #2359B6;
+        border-radius: 3px;
+        height:50px;
+        width:440px;
+    }
+
+    .button-white{
+        background-color:#FFFFFF;
+        color:$blue;
+        border:none;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px 0 rgba(107,122,148,0.3), 0 2px 5px 0 rgba(35,73,139,0.08);
+        height:50px;
+        width:130px;
+        font-family: $PosteramaBlack;
+        font-size:$Baseline;
+        font-weight:900px;
+        line-height:22px;
+        cursor: pointer;
+        padding:10px;
+    }
+}
