@@ -1,55 +1,5 @@
 @import "grid-settings";
 @import "neat";
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
-
-@font-face {
-      font-family: 'PosteramaTextRegular';
-      src: url('../../assets/fonts/PosteramaText-Regular.ttf') format('truetype');
-  }
-@font-face {
-    font-family: 'PosteramaTextBlack';
-    src: url('../../assets/fonts/PosteramaText-Black.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'PosteramaTextLight';
-  src: url('../../assets/fonts/PosteramaText-Light.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'PosteramaTextThin';
-	src: url('../../assets/fonts/PosteramaText-Thin.ttf') format('truetype');
-  }
-
-$Source-Sans-Pro:'Source Sans Pro', sans-serif;
-$PosteramaRegular:'PosteramaTextRegular',sans-serif;
-$PosteramaBlack:'PosteramaTextBlack',sans-serif;
-$PosteramaLight:'PosteramaTextLight',sans-serif;
-$PosteramaThin:'PosteramaTextThin',sans-serif;
-
-$Baseline:16px;
-$Scale:1.414;
-$LineHieght:1.414;
-$Spacing:-1px;
-$ParagraphPaddingTop:0;
-$ParagraphPaddingBotom:$Baseline*0.5;
-$HeaderLineHeight:1.2;
-$HeaderPaddingTop:$Baseline;
-$HeaderPaddingBottom:$Baseline*0.5;
-$blue:#003DA6;
-
-p,h5,h6,h4{
-  line-height: $LineHieght;
-  margin-top:$ParagraphPaddingTop;
-  margin-bottom: $ParagraphPaddingBotom;
-  scale:$Scale;
-}
-
-h1,h2,h3{
-  line-height:$HeaderLineHeight;
-  margin-top:$HeaderPaddingTop;
-  margin-bottom:$HeaderPaddingBottom
-  letter-spacing $Spacing;
-}
-
 
 body{
   font-size:$Baseline;
@@ -57,7 +7,6 @@ body{
 
 .container{
   @include outer-container();
-  @include row();
 }
 
 header{
@@ -84,7 +33,7 @@ ul{
 li{
   display:inline;
   line-height: 25px;
-  font-family: $PosteramaBlack;
+  font-family: $Source-Sans-Pro;
   color:$blue;
   font-size:15px;
   padding-right: 25px;
@@ -99,7 +48,7 @@ li{
   box-shadow: 0 1px 3px 0 rgba(107,122,148,0.3), 0 2px 5px 0 rgba(35,73,139,0.08);
   height:50px;
   width:130px;
-  font-family: $PosteramaBlack;
+  font-family: $Source-Sans-Pro;
   font-size:$Baseline;
   font-weight:900px;
   line-height:22px;
