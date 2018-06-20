@@ -1,0 +1,173 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+@font-face {
+	font-family: 'PosteramaTextRegular';
+	src: url('../../assets/fonts/PosteramaText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PosteramaTextBlack';
+	src: url('../../assets/fonts/PosteramaText-Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PosteramaTextLight';
+	src: url('../../assets/fonts/PosteramaText-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PosteramaTextThin';
+	src: url('../../assets/fonts/PosteramaText-Thin.ttf') format('truetype');
+}
+
+$Source-Sans-Pro:'Source Sans Pro',
+sans-serif;
+$PosteramaRegular:'PosteramaTextRegular',
+sans-serif;
+$PosteramaBlack:'PosteramaTextBlack',
+sans-serif;
+$PosteramaLight:'PosteramaTextLight',
+sans-serif;
+$PosteramaThin:'PosteramaTextThin',
+sans-serif;
+$Baseline:16px;
+$Scale:1.414;
+$LineHieght:1.414;
+$Spacing:-1px;
+$ParagraphPaddingTop:0;
+$ParagraphPaddingBotom:$Baseline*0.5;
+$HeaderLineHeight:1.2;
+$HeaderPaddingTop:$Baseline;
+$HeaderPaddingBottom:$Baseline*0.5;
+$blue:#003DA6;
+p,
+h5,
+h6,
+h4 {
+	line-height: $LineHieght;
+	margin-top: $ParagraphPaddingTop;
+	margin-bottom: $ParagraphPaddingBotom;
+	scale: $Scale;
+}
+
+h1,
+h2,
+h3 {
+	line-height: $HeaderLineHeight;
+	margin-top: $HeaderPaddingTop;
+	margin-bottom: $HeaderPaddingBottom letter-spacing $Spacing;
+}
+
+@include media($mobile) {
+	h2 {
+		font-size: 1em;
+	}
+}
+
+@include media($mobile) {
+	$Baseline: 1.5vw;
+}
+
+body {
+	font-size: $Baseline;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	@include outer-container();
+	@include pad(0 20px);
+	padding: 50px 20px;
+	@include media($mobile) {
+		padding: 20px 20px;
+	}
+}
+
+h1 {
+	font-size: 3.998em;
+	font-family: $PosteramaBlack;
+	font-weight: 900;
+	@include media($md) {
+		font-size: 8vw;
+	}
+}
+
+.regular {
+	font-size: 2.827em;
+	font-family: $PosteramaThin;
+	font-weight: 100;
+	@include media($md) {
+		font-size: 8vw;
+	}
+}
+
+h2 {
+	font-size: 2.827em;
+	font-family: $PosteramaBlack;
+	font-weight: 900;
+	color: #1E252B;
+	@include media($md) {
+		font-size: 7vw;
+	}
+}
+
+h3 {
+	font-size: 1.999em;
+	font-family: $PosteramaBlack;
+	font-weight: 900;
+	@include media($md) {
+		font-size: 6vw;
+	}
+}
+
+h4 {
+	font-size: 1.414em;
+	font-family: $PosteramaBlack;
+	font-weight: 900;
+	@include media($md) {
+		font-size: 2vw;
+	}
+}
+
+h5 {
+	font-size: 1em;
+	font-family: $PosteramaBlack;
+	font-weight: 900;
+	@include media($md) {
+		font-size: 1.5vw;
+	}
+}
+
+h6 {
+	font-size: 0.707em;
+	font-family: $PosteramaBlack;
+	font-weight: 900;
+	@include media($md) {
+		font-size: 1vw;
+	}
+}
+
+.p-intro {
+	font-size: 1.999em;
+	font-family: $PosteramaLight;
+	font-weight: 300;
+}
+
+.p-big {
+	font-size: 1.414em;
+	font-family: $Source-Sans-Pro;
+}
+
+.p-basic {
+	font-size: 1em;
+	font-family: $Source-Sans-Pro;
+	@include media($md) {}
+}
+
+.p-small {
+	font-size: 0.707em;
+	font-family: $Source-Sans-Pro;
+}
+
+input {
+	padding: 20px;
+}

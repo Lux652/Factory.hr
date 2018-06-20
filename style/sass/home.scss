@@ -1,0 +1,270 @@
+::-webkit-input-placeholder {
+	//padding-left:20px;
+	color: #95BCFF;
+}
+
+.container {
+	@include outer-container();
+}
+
+.inside-wrapper {
+	@include shift();
+	@include span-columns(12);
+	span {
+		color: $blue;
+	}
+}
+
+.discover-more {
+	font-family: $Source-Sans-Pro;
+	color: $blue;
+}
+
+@include media($md) {
+	.inside-wrapper {
+		@include span-columns(10);
+		span {
+			color: $blue;
+		}
+	}
+}
+
+.work-container {
+	overflow: hidden;
+	.wrapper {
+		background-color: #DDE1E9;
+		position: relative;
+		.insider {
+			padding: 50px 0;
+			@include outer-container();
+			&:after {
+				content: " ";
+				position: absolute;
+				height: 100%;
+				width: 999%;
+				right: -999%;
+				background-color: #DDE1E9;
+				top: 0;
+			}
+			.work-wrapper {
+				@include shift(-0.7);
+				@include span-columns(7);
+				img {
+					width: 100%;
+				}
+				@include media($md) {
+					@include span-columns(12);
+				}
+			}
+			.icon-wrapper {
+				@include shift(0.3);
+				@include span-columns(1);
+				@include media($xl) {
+					@include shift(0);
+				}
+				@include media($md) {
+					@include span-columns(12);
+					@include shift(0);
+					img {
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+				@include media($mobile) {
+					@include shift(0);
+					img {
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+			}
+			.description-wrapper {
+				@include span-columns(4);
+				@include omega();
+				h5 {
+					display: inline-block;
+					width: 120px;
+					font-size: 15px;
+				}
+				@include media($xl) {
+					@include shift(0.5);
+				}
+				@include media($md) {
+					@include span-columns(12);
+					h5 {
+						@include span-columns(12);
+						display: inline;
+					}
+				}
+			}
+		}
+	}
+}
+
+.active {
+	color: #1E252B;
+}
+
+.inactive {
+	color: #6B788E;
+}
+
+.services-container {
+	padding-top: 5.34%;
+	@include outer-container();
+	.planing,
+	.design,
+	.development {
+		@include span-columns(4);
+		@include media($md) {
+			@include span-columns(4);
+			h3 {
+				font-size: 4.2vw;
+			}
+		}
+		@include media($mobile) {
+			display: block;
+			@include span-columns(12);
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+.companies-container {
+	padding-top: 7.49%;
+	.companies {
+		@include span-columns(2);
+		border: 2px solid #F1F2F3;
+		border-radius: 3px;
+		background-color: #FFFFFF;
+		@include media($md) {
+			@include span-columns(12);
+		}
+	}
+	.more {
+		text-align: center;
+		padding-top: 55px;
+	}
+}
+
+.contact-container {
+	background-color: #003DA6;
+	margin-top: 144px;
+	padding: 0 0 60px;
+	.our-work {
+		@include span-columns(3);
+		h5 {
+			color: #FE1375;
+			@include media($mobile) {
+				font-size: $Baseline;
+			}
+		}
+		h3 {
+			color: #FFFFFF;
+		}
+		.p-basic {
+			color: #FFFFFF;
+		}
+		@include media($md) {
+			@include span-columns(4);
+		}
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+	.discover-more {
+		color: #FFFFFF;
+	}
+	.contact {
+		@include shift(2);
+		@include span-columns(1);
+		img {
+			width: 90px;
+		}
+		@include media($mobile) {
+			padding: 20px 0 0 0;
+			@include shift(0);
+			@include span-columns(1);
+		}
+		@include media($xl) {}
+	}
+	.hello {
+		@include media($md) {
+			float: right;
+		}
+		@include media($mobile) {
+			float: none;
+			@include span-columns(11);
+		}
+		@include media($xl) {}
+		@include span-columns(4);
+		h5 {
+			color: #FE1375;
+			@include media($mobile) {
+				font-size: $Baseline;
+				@include shift(5);
+				padding-top: 30px;
+			}
+		}
+		h3 {
+			color: #FFFFFF;
+			@include media($mobile) {
+				@include shift(4);
+			}
+		}
+		.input {
+			display: block;
+			@include media($mobile) {
+				padding: 10px 0;
+			}
+		}
+		#inptName,
+		#inptEmail {
+			background-color: $blue;
+			border-style: none;
+			border: 1px solid #2359B6;
+			border-radius: 3px;
+			height: 50px;
+			width: 218px;
+			color: white;
+			margin-bottom: 10px;
+		}
+		#inptHelp {
+			background-color: $blue;
+			border-style: none;
+			border: 1px solid #2359B6;
+			border-radius: 3px;
+			height: 50px;
+			width: 440px;
+			color: white;
+			@include media($md) {
+				width: 218px;
+			}
+			@include media($xl) {
+				width: 218px;
+			}
+		}
+		.button-white {
+			margin-top: 10px;
+			background-color: #FFFFFF;
+			color: $blue;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0 1px 3px 0 rgba(107, 122, 148, 0.3), 0 2px 5px 0 rgba(35, 73, 139, 0.08);
+			height: 50px;
+			width: 130px;
+			font-family: $PosteramaBlack;
+			font-size: $Baseline;
+			font-weight: 900px;
+			line-height: 22px;
+			cursor: pointer;
+			display: block;
+		}
+	}
+}

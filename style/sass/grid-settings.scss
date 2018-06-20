@@ -1,0 +1,15 @@
+@import "neat-helpers";
+// Overrides
+$column:80px;
+$gutter: 40px;
+$grid-columns: 12;
+$max-width: 1460px;
+/*$mobile: new-breakpoint(max-width 480px 3);
+$tablet: new-breakpoint(max-width 767px 6);
+$desktop: new-breakpoint(min-width 768px 12);*/
+
+$xl: new-breakpoint(max-width 1200px 12);
+$lg: new-breakpoint(max-width 992px 12);
+$md: new-breakpoint(max-width 768px 12);
+$sm: new-breakpoint(max-width 576px 12);
+$mobile: new-breakpoint(max-width 480px 12);
