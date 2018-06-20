@@ -1,5 +1,6 @@
 @import "grid-settings";
 @import "neat";
+<<<<<<< HEAD
 @import "variables";
 header {
 	.header-wrapper {
@@ -82,3 +83,64 @@ header {
 		}
 	}
 }
+=======
+
+body{
+  font-size:$Baseline;
+  }
+
+.container{
+  @include outer-container();
+}
+
+header{
+  @include outer-container();
+}
+.header-wrapper{
+  height:150px;
+}
+
+
+#logo{
+  padding-top:50px;
+  padding-bottom:50.09px;
+  float:left;
+}
+
+ul{
+  list-style:none;
+  float:right;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+li{
+  display:inline;
+  line-height: 25px;
+  font-family: $Source-Sans-Pro;
+  color:$blue;
+  font-size:15px;
+  padding-right: 25px;
+}
+
+.button-blue{
+  background-color:$blue;
+  color:white;
+  float:right;
+  border:none;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(107,122,148,0.3), 0 2px 5px 0 rgba(35,73,139,0.08);
+  height:50px;
+  width:130px;
+  font-family: $Source-Sans-Pro;
+  font-size:$Baseline;
+  font-weight:900px;
+  line-height:22px;
+  cursor: pointer;
+  margin-top:-12px;
+}
+
+span{
+  color:$blue;
+}
+>>>>>>> 84eaf528a04b49fb9f3b448ff23bb0d2be12d5ff
