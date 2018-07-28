@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
 @font-face {
 	font-family: 'PosteramaTextRegular';
@@ -171,81 +170,4 @@ h6 {
 
 input {
 	padding: 20px;
-=======
-$Source-Sans-Pro:'Source Sans Pro', sans-serif;
-$Baseline:16px;
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
-
-.wrapper{
-  @include outer-container();
-}
-body{
-  margin: 0;
-  padding: 0;
-}
-
-
-h1{
-  font-size:3.998em;
-  font-family:$PosteramaBlack;
-  font-weight:900;
-}
-
-.regular{
-  font-size:2.827em;
-  font-family:$PosteramaThin;
-  font-weight:100;
-}
-h2{
-  font-size:2.827em;
-  font-family:$PosteramaBlack;
-  font-weight:900;
-  color: #1E252B;
-}
-
-
-h3{
-	font-size:1.999em;
-	font-family:$PosteramaBlack;
-  font-weight:900;
-}
-
-h4{
-	font-size:1.414em;
-	font-family:$PosteramaBlack;
-  font-weight:900;
-}
-
-h5{
-	font-size:1em;
-	font-family:$PosteramaBlack;
-  font-weight:900;
-}
-
-h6{
-	font-size:0.707em;
-	font-family:$PosteramaBlack;
-  font-weight:900;
-}
-
-.p-intro{
-	font-size:1.999em;
-	font-family:$PosteramaLight;
-  font-weight:300;
-}
-
-.p-big{
-  font-size:1.414em;
-  font-family:$Source-Sans-Pro;
-}
-
-.p-basic{
-  font-size:1em;
-  font-family:$Source-Sans-Pro;
-}
-
-.p-small{
-  font-size:0.707em;
-  font-family:$Source-Sans-Pro;
->>>>>>> 84eaf528a04b49fb9f3b448ff23bb0d2be12d5ff
 }

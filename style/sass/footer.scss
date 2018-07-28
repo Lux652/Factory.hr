@@ -12,6 +12,10 @@ footer {
 		img {
 			padding-top: 15px;
 		}
+		@include media($mobile){
+			@include span-columns(12);
+			@include shift(0.3);
+		}
 	}
 	.links {
 		padding-top: 30px;
@@ -34,6 +38,7 @@ footer {
 				border-bottom: 0.2px solid #6B788E;
 				padding-right: 4px;
 			}
+
 		}
 		.made-in {
 			@include shift(1);

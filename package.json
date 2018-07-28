@@ -24,11 +24,6 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-<<<<<<< HEAD
     "gulp": "^3.9.1"
-=======
-    "gulp": "^3.9.1",
-    "hoek": "^5.0.3"
->>>>>>> 84eaf528a04b49fb9f3b448ff23bb0d2be12d5ff
   }
 }
