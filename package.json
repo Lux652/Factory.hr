@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "bourbon": "^5.1.0",
-    "bourbon-neat": "^1.9.1",
+    "bourbon-neat": "^4.0.0",
     "gulp-changed": "^3.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",
